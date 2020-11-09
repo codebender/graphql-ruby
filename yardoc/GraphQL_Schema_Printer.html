@@ -1,20 +1,20 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <meta http-equiv="refresh" content="1;url=http://www.rubydoc.info/gems/graphql/1.6.7/GraphQL/Schema/Printer" />
+    <meta http-equiv="refresh" content="1;url=/api-doc/1.11.6/GraphQL/Schema/Printer" />
   </head>
   <body>
-    <p>Class: GraphQL::Schema::Printer &lt; Object
+    <p>Class: GraphQL::Schema::Printer &lt; GraphQL::Language::Printer
 Used to convert your GraphQL::Schema to a GraphQL schema string 
-Examples:
-# print your schema to standard output (via helper)
-MySchema = GraphQL::Schema.define(query: QueryType)
-puts GraphQL::Schema::Printer.print_schema(MySchema)
-# print your schema to standard output
-MySchema = GraphQL::Schema.define(query: QueryType)
-puts GraphQL::Schema::Printer.new(MySchema).print_schema
-# print a single type to standard output
-query_root = GraphQL::ObjectType.define do
+Examples:</p>
+<h1 id="print-your-schema-to-standard-output-via-helper">print your schema to standard output (via helper)</h1>
+<p>MySchema = GraphQL::Schema.define(query: QueryType)
+puts GraphQL::Schema::Printer.print_schema(MySchema)</p>
+<h1 id="print-your-schema-to-standard-output">print your schema to standard output</h1>
+<p>MySchema = GraphQL::Schema.define(query: QueryType)
+puts GraphQL::Schema::Printer.new(MySchema).print_schema</p>
+<h1 id="print-a-single-type-to-standard-output">print a single type to standard output</h1>
+<p>query_root = GraphQL::ObjectType.define do
 name “Query”
 description “The query root of this schema”
 field :post do
@@ -35,8 +35,7 @@ puts printer.print_type(post_type)
 Class methods:
 print_introspection_schema, print_schema
 Instance methods:
-build_blacklist, initialize, print_directive, print_schema,
-print_schema_definition, print_type</p>
+initialize, print_schema, print_type</p>
 
 
   </body>
